@@ -1,7 +1,7 @@
 import random
 
 
-class RockPaperScissors:
+class ComputerSelection:
 
     def random_selection(self) -> str:
         """ Randomly selects an int which can be
