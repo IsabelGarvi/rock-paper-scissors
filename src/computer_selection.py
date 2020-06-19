@@ -2,15 +2,16 @@ import random
 
 
 class RockPaperScissors:
-    def __init__(self):
-        self._rock = "rock"
-        self._paper = "paper"
-        self._scissors = "scissors"
 
-    def random_selection(self):
+    def random_selection(self) -> str:
+        """ Randomly selects an int which can be
+            Rock, Paper or Scissors.
+        """
         switcher = {
-            1: self._rock,
-            2: self._paper,
-            3: self._scissors
+            1: "rock",
+            2: "paper",
+            3: "scissors",
+            4: "lizard",
+            5: "spock"
         }
-        return switcher.get(random.randrange(1, 4))
+        return switcher.get(random.randrange(1, 6))
