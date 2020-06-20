@@ -12,10 +12,9 @@ class GameLogic:
                    "lizard": ["paper", "spock"],
                    "spock": ["rock", "scissors"]}
 
-        result = "YOU TIED :|"
         if choices[user_choice].__contains__(machine_choice):
-            result = "YOU WIN, YAY"
+            return "YOU WIN, YAY"
         elif choices[machine_choice].__contains__(user_choice):
-            result = "YOU LOSE, SORRY"
-
-        return result
+            return "YOU LOSE, SORRY"
+        else:
+            return "YOU TIED :|"
