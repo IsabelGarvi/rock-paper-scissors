@@ -1,6 +1,4 @@
 from src.game_logic import GameLogic
-from .helpers import keys, feed_app_with_input
-import inquirer as inquirer
 
 winning_choices = {"rock": ["scissors", "lizard"],
                    "paper": ["rock", "spock"],
@@ -32,18 +30,3 @@ def test_no_inquirer_tie():
     game_logic = GameLogic()
     for key in winning_choices.keys():
         assert game_logic.winner(key, key) == "YOU TIED :|"
-
-
-# def test_inquirer():
-#     game_logic = GameLogic()
-#
-#     message = 'Make your choice'
-#     name = 'action'
-#     kwargs = {
-#         'choices': ["rock", "paper", "scissors", "lizard", "spock"]
-#     }
-#     text = keys.ENTER
-#
-#     result, cli = feed_app_with_input('list', message, text, **kwargs)
-#     assert result == 'rock'
-

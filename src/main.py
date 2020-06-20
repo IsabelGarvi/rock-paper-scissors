@@ -1,5 +1,5 @@
-from .computer_selection import ComputerSelection
-from .game_logic import GameLogic
+from computer_selection import ComputerSelection
+from game_logic import GameLogic
 import inquirer as inquirer
 
 
