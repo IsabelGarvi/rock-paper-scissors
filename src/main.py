@@ -10,7 +10,6 @@ class Main:
         self._game_logic = GameLogic()
         self.mainFunction()
 
-
     def mainFunction(self):
         """ Initiates the program asking the user to select an option.
             Calls for the random_selection function on computer_selection.
