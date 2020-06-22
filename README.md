@@ -9,6 +9,5 @@ line on your console.
 
 * pre-commit hook
     - Runs the tests when commit and if the tests fail, 
-it doesn't commit. 
-Skip the hook with _--no-verify_
+it doesn't commit.
  

@@ -27,7 +27,10 @@ class Main:
         user_choice = inquirer.prompt(question)["action"]
         computer_choice = self._rand_sel.random_selection()
         print("YOU:  " + user_choice + " vs COMPUTER:  " + computer_choice)
-        rps_winner = self._game_logic.winner(user_choice=user_choice, machine_choice=computer_choice)
+        rps_winner = self._game_logic.winner(
+            user_choice=user_choice,
+            machine_choice=computer_choice
+        )
         print(rps_winner)
 
 
