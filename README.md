@@ -7,7 +7,4 @@ to mind.
 line on your console. 
     - pip install -r requirements.txt
 
-* pre-commit hook
-    - Runs the tests when commit and if the tests fail, 
-it doesn't commit.
  
