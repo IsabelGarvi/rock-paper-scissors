@@ -6,8 +6,8 @@ python:
 install:
   - pip install -r requirements.txt
 before-script:
-  - flake8 src/*.py
-  - flake8 tests/*.py
+  - flake8 src
+  - flake8 tests
 # command to run tests
 script:
   - pytest -s tests/test.py
